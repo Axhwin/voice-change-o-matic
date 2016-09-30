@@ -175,7 +175,7 @@ function visualize() {
     draw();
 
   } else if(visualSetting == "frequencybars") {
-    analyser.fftSize = 8192;
+    analyser.fftSize = 16384;
     var bufferLength = analyser.frequencyBinCount;
     console.log(bufferLength);
     var dataArray = new Uint8Array(bufferLength);
